@@ -51,7 +51,7 @@ public class MojangAPI extends API {
     /**
      * Gets player profile
      * @param uuid
-     * @return {@see me.kbrewster.mojangapi.profile.Profile}
+     * @return {@see Profile}
      * @throws IOException
      * @throws APIException
      */
@@ -109,7 +109,7 @@ public class MojangAPI extends API {
     /**
      * Gets Name History of a Minecraft Username
      * @param username
-     * @return List of {@see me.kbrewster.mojangapi.profile.Name}
+     * @return List of {@see Name}
      * @throws IOException
      * @throws APIException
      */
@@ -121,7 +121,7 @@ public class MojangAPI extends API {
     /**
      * Gets Name History of a Minecraft UUID
      * @param uuid
-     * @return List of {@see me.kbrewster.mojangapi.profile.Name}
+     * @return List of {@see Name}
      * @throws IOException
      * @throws APIException
      */

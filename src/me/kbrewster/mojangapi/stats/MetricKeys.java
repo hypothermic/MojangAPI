@@ -1,7 +1,5 @@
 package me.kbrewster.mojangapi.stats;
 
-import lombok.Getter;
-
 public enum MetricKeys {
 
     ITEM_MINECRAFT("item_sold_minecraft"),
@@ -9,10 +7,13 @@ public enum MetricKeys {
     ITEM_SCROLLS("item_sold_scrolls"),
     PREPAID_MINECRAFT("prepaid_card_redeemed_minecraft");
 
-    @Getter
     private String key;
 
     MetricKeys(String key) {
         this.key = key;
+    }
+
+    public String getKey() {
+        return key;
     }
 }

@@ -2,17 +2,19 @@ package me.kbrewster.mojangapi.authentication;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import lombok.Getter;
 
-@Getter
-public class SelectedProfile {
+import me.kbrewster.mojangapi.Property;
+
+import java.util.List;
+
+public class User {
+
     @SerializedName("id")
     @Expose
     private String id;
-    @SerializedName("name")
+
+    @SerializedName("properties")
     @Expose
-    private String name;
-    @SerializedName("legacy")
-    @Expose
-    private boolean legacy;
+    private List<Property> properties = null;
+
 }

@@ -1,6 +1,5 @@
 package me.kbrewster;
 
-import lombok.Getter;
 import okhttp3.*;
 
 import java.io.IOException;
@@ -13,10 +12,8 @@ import java.lang.annotation.RetentionPolicy;
 @API.Reference(apiName = "API", apiVersion = "1.5")
 public abstract class API {
 
-    @Getter
     private static String apiName = API.class.getAnnotation(Reference.class).apiName();
 
-    @Getter
     private static String apiVersion = API.class.getAnnotation(Reference.class).apiVersion();
 
     private static OkHttpClient client = new OkHttpClient();
@@ -80,6 +77,14 @@ public abstract class API {
      */
     protected static String sendPost(String url, String payload) throws IOException {
         return sendPost(url, payload, "application/json");
+    }
+
+    public static String getApiName() {
+        return apiName;
+    }
+
+    public static String getApiVersion() {
+        return apiVersion;
     }
 
     @Retention(RetentionPolicy.RUNTIME)
