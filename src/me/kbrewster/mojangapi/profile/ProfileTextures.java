@@ -21,4 +21,22 @@ public class ProfileTextures {
     @Expose
     private Textures textures;
 
+    public ProfileTextures() {
+    }
+
+    public Textures getTextures() {
+        return textures;
+    }
+
+    public String getProfileName() {
+        return profileName;
+    }
+
+    public String getProfileId() {
+        return profileId;
+    }
+
+    public long getTimestamp() {
+        return timestamp;
+    }
 }

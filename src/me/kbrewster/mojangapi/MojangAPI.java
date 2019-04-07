@@ -323,7 +323,7 @@ public class MojangAPI extends API {
         payload.addProperty("username", username);
         payload.addProperty("password", password);
         if (token != null) payload.addProperty("clientToken", token); //optional
-        if (requestUser) payload.addProperty("requestUser", true); //optional
+        if (requestUser) payload.addProperty("requestUser", false); //optional
         String response = sendPost("https://authserver.mojang.com/authenticate", payload.toString());
         JsonObject json = new JsonParser().parse(response).getAsJsonObject();
         if (json.get("error") instanceof JsonNull)

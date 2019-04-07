@@ -3,7 +3,9 @@ package me.kbrewster.mojangapi.profile;
 public enum Model {
 
     STEVE(""),
-    ALEX("slim");
+    //ALEX("slim");
+
+    ;
 
     private String model;
 

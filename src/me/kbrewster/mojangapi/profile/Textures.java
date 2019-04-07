@@ -13,4 +13,11 @@ public class Textures {
     @Expose
     private TextureURL cape;
 
+    public TextureURL getSkin() {
+        return skin;
+    }
+
+    public TextureURL getCape() {
+        return cape;
+    }
 }

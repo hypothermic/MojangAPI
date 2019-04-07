@@ -9,4 +9,7 @@ public class TextureURL {
     @Expose
     private String url;
 
+    public String getUrl() {
+        return url;
+    }
 }

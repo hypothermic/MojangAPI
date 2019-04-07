@@ -23,7 +23,7 @@ public abstract class API {
      *
      * @param url
      * @param contentType
-     * @return
+     * @return HTTP get result as String
      * @throws IOException
      */
     protected static String sendGet(String url, String contentType) throws IOException {
@@ -41,7 +41,7 @@ public abstract class API {
      * Sends GET request
      *
      * @param url
-     * @return
+     * @return HTTP get result as String
      * @throws IOException
      */
     protected static String sendGet(String url) throws IOException {
@@ -53,7 +53,7 @@ public abstract class API {
      *
      * @param url
      * @param contentType
-     * @return
+     * @return HTTP post result as String
      * @throws IOException
      */
     protected static String sendPost(String url, String payload, String contentType) throws IOException {
@@ -72,7 +72,7 @@ public abstract class API {
      * Sends POST request
      *
      * @param url
-     * @return
+     * @return HTTP post result as String
      * @throws IOException
      */
     protected static String sendPost(String url, String payload) throws IOException {
